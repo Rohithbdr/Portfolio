@@ -224,7 +224,6 @@ a {
 .projects-container {
     display: flex;
     margin-left: 2%;
-    height: 480px;
 }
 
 .project-card {
