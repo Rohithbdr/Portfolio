@@ -3,29 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 
-*{
+* {
     margin: 0;
-    box-sizing:border-box ;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
 }
 
 .home {
     background: #180c24;
     padding-inline: 2.5%;
-    color: white;  
-    min-height: 100vh; 
+    color: white;
+    min-height: 86vh;
+    display: flex;
+    ;
+    align-items: center;
 }
 
 .home-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 7%;
 }
 
 .home-para {
     font-family: 'Volkhov', serif;
-    font-size: 48px;
+    font-size: 65px;
 }
 
 .home-button {
@@ -52,10 +58,11 @@
     top: 0;
     left: -50px;
     z-index: -1;
-    background: rgb(255, 72, 53);;
+    background: rgb(255, 72, 53);
     transform: skewX(35deg);
     transition: width .7s ease-in-out;
 }
+
 .home-button:hover::before {
     width: 150%;
 }
@@ -68,19 +75,36 @@
     align-items: center;
 }
 
+/* NAV-BAR */
+
 .nav-bar {
+    background: #180c24;
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto Slab', serif;
-    padding-top: 1.8%;
-    margin-left: 1.5% ;
+    padding-top: 3.8%;
+    padding-inline: 2%;
+    color: white;
+    font-size: 32px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .nav-2 {
     display: flex;
     gap: 86px;
-    font-size: 20px;
 }
+
+.ham {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 
 .heads {
     font-family: Bree Serif;
@@ -90,6 +114,7 @@
     margin-left: 5%;
     margin-bottom: 3%;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .about {
@@ -191,28 +216,27 @@
     align-items: center;
     text-align: center;
     border-radius: 13px;
-    box-shadow: 5px 8px 8px grey;
+    box-shadow: 5px 8px 8px rgba(0,0,0,0.2);
  }
 
  /* PROJECTS */
 
 .projects-container {
     display: flex;
-    gap: 30px;
-    overflow-x: scroll;
     margin-left: 2%;
     height: 480px;
 }
 
 .project-card {
-    height: 425px;
-    width: 315px;
+    height: 425px !important;
+    width: 315px !important;
     padding: 20px;
     flex-shrink: 0;
     border-radius: 20px;
     position: relative;
     overflow: hidden ;
     cursor: pointer;
+    margin: 15px;
  }
 
  a {
@@ -244,14 +268,18 @@
 .space2 {
     transition: .4s;
     color: white;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
 }
 
 .project-card:hover .space2 {
-    transform: scale(1.1) translateY(-180px);
+    transform: scale(1.1) translateY(-98px);
     font-size: 23px;
     color: white;
     padding: 18px;
     font-weight: 800;
+    z-index: 1;
 }
 
 .project-card:hover a {
@@ -261,7 +289,33 @@
 .space:hover::before {
     transform: scale(1.1);
     opacity: 0.4;
+    filter: blur(5px);
 }
+
+
+.calc {
+    padding: 0;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid black;
+}
+
+.calc2 {
+    position: absolute;
+    transition:  .4s ease-in-out;
+    z-index: -1;
+    padding-left: 23px;
+    color: white;
+}
+
+.project-card:hover .calc2 {
+    z-index: 1;
+    font-size: 23px;
+    padding-left: 33px;
+    transform: translateY(-318px) scale(1.1);
+ }
 
 .rps-img {
     height: 432px;
@@ -289,12 +343,13 @@
     z-index: 1;
     font-size: 23px;
     padding-left: 38px;
-    transform: translateY(-235px) scale(1.1);
+    transform: translateY(-318px) scale(1.1);
 }
 
 .project-card:hover .rps-img {
     opacity: .3;
     transform: scale(1.1);
+    filter: blur(6px);
 }
 
 .wiki {
@@ -303,6 +358,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border: 1px solid black;
 }
 
 .wiki2 {
@@ -317,7 +373,7 @@
     z-index: 1;
     font-size: 23px;
     padding-left: 38px;
-    transform: translateY(-235px) scale(1.1);
+    transform: translateY(-320px) scale(1.1);
 }
 
 .todo {
@@ -326,6 +382,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border: 1px solid black;
 }
 
 .todo2 {
@@ -340,7 +397,79 @@
     z-index: 1;
     font-size: 23px;
     padding-left: 33px;
-    transform: translateY(-236px) scale(1.1);
+    transform: translateY(-322px) scale(1.1);
+ }
+
+ .covid {
+    padding: 0;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid black;
+ }
+
+ .covid2 {
+    position: absolute;
+    transition:  .4s ease-in-out;
+    z-index: -1;
+    padding-left: 23px;
+    color: white;
+ }
+
+ .project-card:hover .covid2 {
+    z-index: 1;
+    font-size: 23px;
+    padding-left: 33px;
+    transform: translateY(-322px) scale(1.1);
+ }
+
+ .chat {
+    padding: 0;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid black;
+ }
+
+ .chat2 {
+    position: absolute;
+    transition:  .4s ease-in-out;
+    z-index: -1;
+    padding-left: 23px;
+    color: white;
+ }
+
+ .project-card:hover .chat2 {
+    z-index: 1;
+    font-size: 23px;
+    padding-left: 33px;
+    transform: translateY(-322px) scale(1.1);
+ }
+
+ .page {
+    padding: 0;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid black;
+ }
+
+ .page2 {
+    position: absolute;
+    transition:  .4s ease-in-out;
+    z-index: -1;
+    padding-left: 23px;
+    color: white;
+ }
+
+ .project-card:hover .page2 {
+    z-index: 1;
+    font-size: 23px;
+    padding-left: 33px;
+    transform: translateY(-318px) scale(1.1);
  }
 
 /* PROJECTS */
@@ -358,21 +487,39 @@
  .progress-card {
     min-height: 250px;
     width: 550px;
-    background: red; 
     flex-shrink: 0; 
     padding: 8px; 
     border-top-left-radius: 12px;
     border-bottom-right-radius: 70px;   
-    border-left-width: 6px;
+    border-left-width: 3px;
     border-left-style: groove;
-    border-color: black;
+    border-color: rgba(0,0,0,0.7);
     border-top-right-radius: 6px;
+    padding: 28px;
+ }
+
+ .static {
+    background-image: linear-gradient(45deg,#E0C4FD,#8FC6FD);
+ }
+
+ .resp {
+    background-image: linear-gradient(35deg,#2DC1E4,#E8ECC7);
+ }
+
+ .custom {
+    background-image: linear-gradient(35deg,#2DC1E4,#E8ECC7);
+ }
+
+ .dynamic {
+    background-image: linear-gradient(45deg,#E0C4FD,#8FC6FD);
  }
 
  .progress-para {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin-top: 25px;
+    line-height: 30px;
  }
  
 .layer-container {
@@ -390,17 +537,19 @@
 
 .social-media {
     display: flex;
+    gap: 8px;
 }
 
 .icon-layer {
-    height: 75px;
-    width: 78px;
-    background: red;
+    background: rgba(0,0,0,0.7);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     margin-right: 1.5%;
+    padding-block: 5%;
+    padding-inline: 6%;
 }
 
 .social-icons {
@@ -429,7 +578,7 @@
 }
 
 .name {
-    border-top-style: groove;
+    border-top: solid rgba(0,0,0,0.7);
     text-align: center;
     padding: 1%;
     font-family: 'Poppins', sans-serif;
@@ -470,3 +619,180 @@
 .ps:hover {
     background-image: linear-gradient(130deg,#0c5bfa,#f66e7c 72%)
 }
+
+.num {
+    margin-top: 13%;
+}
+
+@media screen and (min-width:992px) {
+    .ham-img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .home {
+        margin-bottom: 8.5%;
+    }
+
+    .heads {
+        text-align: left;
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content2 {
+        width: 70%;
+        margin-top: 13%;
+        margin-right: 4%;
+    }
+
+    .home-para {
+        font-size: 9vw;
+        padding-inline: 7%;
+    }
+
+    .ham-img {
+        width: 38px;
+    }
+
+    .nav-2 {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 106px;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        background: black;
+        width: 100%;
+        height: 670px;
+    }
+
+
+    .nav-bar {
+        padding-inline: 5%;
+        padding-block: 8%;
+        font-size: 26px;
+    }
+
+    .about {
+        flex-direction: column;
+        font-size: 20px;
+        margin-right: 0;        
+    }
+
+    .about1 > p{
+        margin-left: 0 !important;
+    }
+
+    .about1 {
+        order: 1;
+        padding-inline: 15px;
+        margin-top: 8%;
+    }
+
+    .abtme-img {
+        height: 445px;
+        width: 445px;
+        margin-left: 65px;
+        margin-top: 6%;
+        display: none;
+    }
+
+    /* SKILLS */
+
+    .skills > h1 {
+        margin-block: 10%;
+    }
+
+    .skills-container {
+        margin-top: 6.5%;
+        margin-bottom: 13%;
+    }
+
+    .skill-card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .projects > h1 {
+        margin-block: 10%;
+    }
+
+    /* PROGRESS */
+
+    .progress-container {
+        width: 100%;
+        padding-inline: 16px;
+        padding-top: 10%;
+    }
+
+    .progress-layer > h1 {
+        margin-block: 13%;
+    }
+
+    .progress-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 18px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .progress-para {
+        line-height: 26px;
+        font-size: 18px;
+    }
+
+    #layer-icon {
+        font-size: 80px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        border-top: solid rgba(0,0,0,0.7);
+        margin-top: 5%;
+    }
+
+    .footer-cont {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer > h1 {
+        margin-block: 8.5%;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin-left: 2%;
+    }
+
+    .social2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .num {
+       margin-top: 8%;
+    }
+
+    .name {
+        margin-top: 5%;
+        padding: 5%;
+    }
+
+}
+
