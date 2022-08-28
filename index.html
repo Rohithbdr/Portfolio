@@ -8,32 +8,46 @@
     <link rel="stylesheet" href="index.css">    
     <script src="https://kit.fontawesome.com/b4bc2c9b2b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 </head>
 <body>
     <div class="background">
-       <div class="home">
-            <div class="nav-bar">
-                <div>
-                    <h1>Rohith</h1>
-                </div>
-                <div class="nav-2">
-                    <p>Home</p>
-                    <p>About Me</p>
-                    <p>Skills</p>
-                    <p>Works</p>
-                    <p>Contact</p>
-                </div>
+        <div class="nav-bar">
+            <div>
+                <p>Rohith</p>
             </div>
+            <div>
+                <button class="ham"><img src="https://i.ibb.co/gdK8Zgh/icon-hamburger-svg.jpg" class="ham-img" /></button>
+            </div>
+            <div class="nav-2">
+                <a href="">
+                    <p>Home</p>
+                </a>
+                <a href="">
+                    <p>About Me</p>
+                </a>
+                <a href="">
+                    <p>Skills</p>
+                </a>
+                <a href="">
+                    <p>Works</p>
+                </a>
+                <a href="">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </div>
+        <div class="home">
             <div class="home-container">
                 <div>
-                    <p class="home-para">Hello! Welcome To My <span style="color: #ff4835;">PORTFOLIO</span>.<br/> Iam much obliged to Develope Pages. </p>
+                    <p class="home-para">Hello! Welcome To My <span style="color: #ff4835;">PORTFOLIO</span>.<br /> Iam much obliged to Develope Pages. </p>
                 </div>
                 <div class="home-content2">
                     <p class="home-para" style="margin: 3.5%;"> Reach Me</p>
                     <button class="home-button">To Contact</button>
-                </div>                
+                </div>
             </div>
-       </div>
+        </div>
        <h1 class="heads">ABOUT ME!</h1>
        <div class="about">
             
@@ -45,7 +59,7 @@
             </div>
        </div>
        <div class="skills">
-        <h1 class="heads">SKILLS</h1>
+        <h1 class="heads">My SKILLS</h1>
             <div class="skills-container">
                 <div class="skill-card html" >
                     <div>
@@ -98,14 +112,28 @@
             </div>
        </div>
        <div class="projects">
-            <h1 class="heads">PROJECTS</h1>
+            <h1 class="heads">My PROJECTS</h1>
             <div class="projects-container">
+                <div class="project-card page">
+                    <img src="https://i.ibb.co/DGTYcqk/ss.png" class="rps-img"/>
+                    <div class="page2">
+                        <a href="https://ggk.ccbp.tech/" target="_blank" style=" color:white "><h1>Page</h1></a>
+                        <p style="margin-top: 4%;">It's a Static page developed using HTML & CSS.</p>
+                    </div>
+                </div>
                 <div class="project-card space">
                     <div class="space2">
                         <a href="https://rohith-bdr.netlify.app/ " target="_blank" style=" color:white ">
                             <h1>The Space</h1>
                         </a>
                         <p style="margin-top: 4%;">It's a landing page developed using JavaScript.</p>
+                    </div>
+                </div>
+                <div class="project-card calc">
+                    <img src="https://i.ibb.co/ZV2Zy5s/ss.png" class="rps-img"/>
+                    <div class="calc2">
+                        <a href="https://calculator-b.netlify.app/" target="_blank" style=" color:white "><h1>Calculator</h1></a>
+                        <p style="margin-top: 4%;">It's a Calculator developed using JavaScript.</p>
                     </div>
                 </div>
                 <div class="project-card rps">
@@ -128,35 +156,45 @@
                         <a href="https://rwiki.ccbp.tech/" target="_blank" style=" color:white "><h1>To-Do</h1></a>
                         <p style="margin-top: 4%;">It's a  page developed using JavaScript that store in local storage.</p>
                     </div>
+                </div>                
+                <div class="project-card chat">
+                    <img src="https://i.ibb.co/zX0wmq5/ss.png" class="rps-img"/>
+                    <div class="chat2">
+                        <a href="https://chats-messenger.netlify.app/" target="_blank" style=" color:white "><h1>Messenger</h1></a>
+                        <p style="margin-top: 4%;">It's a Messenger page developed using ReactJS.</p>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h1>The Space</h1>
-                    <p>It's a landing page developed using JavaScript.</p>
+                <div class="project-card covid">
+                    <img src="https://i.ibb.co/QC7sJZS/ss.png" class="rps-img"/>
+                    <div class="covid2">
+                        <a href="https://covid-landingpage.netlify.app/" target="_blank" style=" color:white "><h1>Covid-19</h1></a>
+                        <p style="margin-top: 4%;">It's a landing  page developed using ReactJS.</p>
+                    </div>
                 </div>
             </div>            
        </div>
        <div class="Progress">
-            <h1 class="heads" style="text-align: center;">What I Build...</h1>
+            <h1 class="heads">What I Build</h1>
             <div class="progress-container">
-                <div class="progress-card">
+                <div class="progress-card static">
                     <h1>Static Websites</h1>
                     <p class="progress-para">A Static Website contains web-pages with fixed content. Each page is developed using HTML and CSS and displays the same information to every visitor.</p>
                 </div>
-                <div class="progress-card">
+                <div class="progress-card resp">
                     <h1>Responsive Websites</h1>
-                    <p class="progress-para">Responsive Web design is the approach that suggests that design and development should respond to the user's behaviour and environment based on screen size, platform and orientation. The name "Responsive" comes due to the behaviour of the web page itself.</p>
+                    <p class="progress-para">Responsive Web design is the approach that suggests that design and development should respond to the user's behaviour and environment based on screen size, platform and orientation.</p>
                 </div>
-                <div class="progress-card">
+                <div class="progress-card custom">
                     <h1>Customizable Layouts</h1>
                     <p class="progress-para">Customizable sites are templates with set layouts. You may be able to change photos and colors, but your site will look similar tomany other sites due to the template.</p>
                 </div>
-                <div class="progress-card">
+                <div class="progress-card dynamic">
                     <h1>Dynamic Websites</h1>
                     <p class="progress-para">Dynamic Websites changes the page according to the given API calls or the user wished to look. In general E-Commerce sites , Youtube , Facebook , etc. come under this.</p>
                 </div>
             </div>
             <div class="progress-layer">
-                <h1 class="heads" style="text-align: center;">Progress...</h1>
+                <h1 class="heads">My Progress</h1>
                 <div class="layer-container">
                     <div class="layer-card">
                         <span class="material-symbols-outlined" id="layer-icon">fact_check </span>
@@ -174,7 +212,7 @@
             </div>
        </div>
        <div class="footer">
-        <h1 class="heads">Contact</h1>
+        <h1 class="heads">To Connect</h1>
             <div class="footer-cont">
                 <div>
                     <div class="social-media">
@@ -196,12 +234,12 @@
                     </div>
                     <p class="footer-para" style="margin-top: 5%;">Visakhapatnam, Andhra Pradesh, India</p>
                 </div>
-                <div>
+                <div class="social2">
                     <div class="contact-2">
                         <i class="fa-solid fa-envelope" style="font-size: 25px;"></i>
                         <p class="email-para">rohithbandaru2@gmail.com</p>
                     </div>
-                    <div class="contact-2" style="margin-top: 13%;">
+                    <div class="contact-2 num">
                         <i class="fa-solid fa-square-phone" style="font-size: 26px;"></i>
                         <p class="email-para">9550066955</p>
                     </div>
@@ -210,5 +248,43 @@
        </div>
        <p class="name"> By Rohith Bandaru.</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+ $('.projects-container').slick({
+  dots: false,
+  infinite: false,
+  prevArrow: false,
+  nextArrow: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+	
+    </script>
 </body>
 </html>
