@@ -179,6 +179,8 @@ a {
     flex-wrap: wrap;
     margin-top: 5%;
     margin-bottom: 4.5%;
+    max-width:1400px;
+  margin-inline:auto;
 }
 
 .icon-para {
