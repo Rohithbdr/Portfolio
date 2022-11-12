@@ -56,6 +56,7 @@ li {
     overflow: hidden;
     z-index: 0;
     cursor: pointer;
+    border: none;
 }
 
 
