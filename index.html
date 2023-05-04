@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">      
+    <link rel="stylesheet" href="style.css">      
     <script src="https://kit.fontawesome.com/b4bc2c9b2b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
@@ -122,6 +122,8 @@
        </div>
        <div class="projects" id="4" >
             <h1 class="heads">My PROJECTS</h1>
+        <div class="projects-corousel">
+            <button class="prev proj-btn"><i class="fa-solid fa-less-than"></i></button>
             <div class="projects-container" style="margin-top:2.5%">
                 <div class="project-card page">
                     <img src="https://i.ibb.co/DGTYcqk/ss.png" class="rps-img"/>
@@ -162,7 +164,7 @@
                 <div class="project-card todo">
                     <img src="https://i.ibb.co/d2DP1Qw/ss.png" class="rps-img" alt="todo"/>
                     <div class="todo2">
-                        <a href="https://rwiki.ccbp.tech/" target="_blank" style=" color:white "><h1>To-Do</h1></a>
+                        <a href="https://rohithb.ccbp.tech/" target="_blank" style=" color:white "><h1>To-Do</h1></a>
                         <p style="margin-top: 4%;">It's a  page developed using JavaScript that store in local storage.</p>
                     </div>
                 </div>                
@@ -180,7 +182,9 @@
                         <p style="margin-top: 4%;">It's a landing  page developed using ReactJS.</p>
                     </div>
                 </div>
-            </div>            
+            </div> 
+            <button class="next proj-btn"><i class="fa-solid fa-greater-than"></i></button>
+        </div>           
        </div>
        <div class="Progress" style="margin-top:2.5%" >
             <h1 class="heads">What I Build</h1>
@@ -257,10 +261,10 @@
             <p class="name"> By <a ><span class="highlighter">Rohith Bandaru</span></a></p>
        </div>       
     </div>
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script type="text/javascript">
+    <script src="app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <!-- <script type="text/javascript">
  $('.projects-container').slick({
   dots: false,
   infinite: false,
@@ -294,6 +298,6 @@
   ]
 });
 	
-    </script>
+    </script> -->
 </body>
 </html>
